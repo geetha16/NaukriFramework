@@ -34,6 +34,20 @@ public abstract class BasePage
 		}
 	}
 	
+	/*public void closeChildBrowser()
+	{
+		String parent=driver.getWindowHandle();
+		Set<String> allWH=driver.getWindowHandles();
+		allWH.remove(parent);
+		for(String wh:allWH)
+		{
+			String title=driver.getTitle();
+			System.out.println(title);
+			driver.close();
+			
+		}*/
+	}
+	
 			
 
-}
+

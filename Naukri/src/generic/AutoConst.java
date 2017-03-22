@@ -7,7 +7,8 @@ public interface AutoConst
 	String CHROME_KEY = "webdriver.chrome.driver";
 	String CHROME_VALUE = "./driver/chromedriver.exe";
 	String URL = "https://www.naukri.com/";
-	String INPUT_PATH = "C:\\Users\\Geetu\\git\\Naukri\\Naukri\\data\\NaukriCredentials.xlsx";
+	
+	String INPUT_PATH = "./data/NaukriCredentials.xlsx";
 	String SHEET = "Credential";		
 	
 }

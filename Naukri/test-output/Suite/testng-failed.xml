@@ -3,19 +3,6 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="script.Login">
-        <methods>
-          <include name="postCondition"/>
-          <include name="preCondition"/>
-        </methods>
-      </class> <!-- script.Login -->
-      <class name="script.UploadResumeAndLogout">
-        <methods>
-          <include name="postCondition"/>
-          <include name="upload"/>
-          <include name="preCondition"/>
-        </methods>
-      </class> <!-- script.UploadResumeAndLogout -->
       <class name="script.MyNaukri">
         <methods>
           <include name="navigateToMyNaukri"/>
@@ -23,6 +10,19 @@
           <include name="preCondition"/>
         </methods>
       </class> <!-- script.MyNaukri -->
+      <class name="script.VerifyUploadResumeAndLogout">
+        <methods>
+          <include name="postCondition"/>
+          <include name="testVerifyUploadResumeAndLogout"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- script.VerifyUploadResumeAndLogout -->
+      <class name="script.VerifyLogin">
+        <methods>
+          <include name="postCondition"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- script.VerifyLogin -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,127 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="34827" started-at="2017-03-12T08:42:48Z" finished-at="2017-03-12T08:43:23Z">
+  <suite name="Default suite" duration-ms="279591" started-at="2017-03-21T08:37:03Z" finished-at="2017-03-21T08:41:43Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="34827" started-at="2017-03-12T08:42:48Z" finished-at="2017-03-12T08:43:23Z">
-      <class name="script.UploadResumeAndLogout">
-        <test-method status="PASS" signature="preCondition()[pri:0, instance:script.UploadResumeAndLogout@5b275dab]" name="preCondition" is-config="true" duration-ms="9547" started-at="2017-03-12T14:13:12Z" finished-at="2017-03-12T14:13:22Z">
+    <test name="Default test" duration-ms="279591" started-at="2017-03-21T08:37:03Z" finished-at="2017-03-21T08:41:43Z">
+      <class name="script.uploadResume">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:script.uploadResume@27efef64]" name="preCondition" is-config="true" duration-ms="11057" started-at="2017-03-21T14:07:03Z" finished-at="2017-03-21T14:07:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method status="FAIL" signature="upload()[pri:0, instance:script.UploadResumeAndLogout@5b275dab]" name="upload" duration-ms="6" started-at="2017-03-12T14:13:22Z" finished-at="2017-03-12T14:13:22Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.click(Unknown Source)
-	at pom.LoginPage.clickLoginLink(LoginPage.java:20)
-	at script.Login.verifyLogin(Login.java:32)
-	at script.UploadResumeAndLogout.upload(UploadResumeAndLogout.java:30)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="testUploadResumeLogout()[pri:0, instance:script.uploadResume@27efef64]" name="testUploadResumeLogout" duration-ms="266893" started-at="2017-03-21T14:07:14Z" finished-at="2017-03-21T14:11:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- upload -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:script.UploadResumeAndLogout@5b275dab]" name="postCondition" is-config="true" duration-ms="947" started-at="2017-03-12T14:13:22Z" finished-at="2017-03-12T14:13:23Z">
+        </test-method> <!-- testUploadResumeLogout -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:script.uploadResume@27efef64]" name="postCondition" is-config="true" duration-ms="1600" started-at="2017-03-21T14:11:41Z" finished-at="2017-03-21T14:11:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
-      </class> <!-- script.UploadResumeAndLogout -->
-      <class name="script.Login">
-        <test-method status="PASS" signature="preCondition()[pri:0, instance:script.Login@523884b2]" name="preCondition" is-config="true" duration-ms="9333" started-at="2017-03-12T14:13:01Z" finished-at="2017-03-12T14:13:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preCondition -->
-        <test-method status="PASS" signature="verifyLogin()[pri:0, instance:script.Login@523884b2]" name="verifyLogin" duration-ms="1340" started-at="2017-03-12T14:13:10Z" finished-at="2017-03-12T14:13:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:script.Login@523884b2]" name="postCondition" is-config="true" duration-ms="941" started-at="2017-03-12T14:13:11Z" finished-at="2017-03-12T14:13:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
-      </class> <!-- script.Login -->
-      <class name="script.MyNaukri">
-        <test-method status="PASS" signature="preCondition()[pri:0, instance:script.MyNaukri@4501b7af]" name="preCondition" is-config="true" duration-ms="11419" started-at="2017-03-12T14:12:48Z" finished-at="2017-03-12T14:12:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preCondition -->
-        <test-method status="FAIL" signature="navigateToMyNaukri()[pri:0, instance:script.MyNaukri@4501b7af]" name="navigateToMyNaukri" duration-ms="31" started-at="2017-03-12T14:12:59Z" finished-at="2017-03-12T14:12:59Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.click(Unknown Source)
-	at pom.LoginPage.clickLoginLink(LoginPage.java:20)
-	at script.Login.verifyLogin(Login.java:32)
-	at script.MyNaukri.navigateToMyNaukri(MyNaukri.java:24)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToMyNaukri -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:script.MyNaukri@4501b7af]" name="postCondition" is-config="true" duration-ms="1217" started-at="2017-03-12T14:12:59Z" finished-at="2017-03-12T14:13:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
-      </class> <!-- script.MyNaukri -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- script.uploadResume -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

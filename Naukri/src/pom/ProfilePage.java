@@ -1,13 +1,18 @@
 package pom;
 
+
 import generic.BasePage;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class ProfilePage extends BasePage
 {
+	
+	
 	@FindBy(id="uploadLink")
 	private WebElement clickUploadLink;
     
@@ -17,6 +22,8 @@ public class ProfilePage extends BasePage
 	public ProfilePage(WebDriver driver) 
 	{
 		super(driver);
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
 	}
 
 	public void upload()
@@ -24,9 +31,9 @@ public class ProfilePage extends BasePage
 		clickUploadLink.click();
 	}
 	
-	public void attachCV()
+	public void attachCV(String CV)
 	{
-		clickAttachCV.sendKeys("./data/MyCV.docx");
+		clickAttachCV.sendKeys(CV);
 	}
 	
 	@FindBy(xpath=("//button[@type='button']"))
@@ -43,6 +50,8 @@ public class ProfilePage extends BasePage
 	
 	public void logOut()
 	{
-		logout.click();
+		Actions action = new Actions(driver);
+        action.moveToElement(logout).click();
+       
 	}
 }
